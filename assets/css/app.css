@@ -1,0 +1,43 @@
+:root {
+	--default-color-01: #ffffff;
+	--default-color-02: #808080;
+	--default-color-03: #000000;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--default-color-03);
+	height: 100vh;
+}
+
+.game-box {
+	background-color: var(--default-color-01);
+	image-rendering: pixelated;
+}
+
+@media (orientation: landscape) {
+	.game-box {
+		height: 100%;
+	}
+}
+
+@media (orientation: portrait) {
+	.game-box {
+		width: 100%;
+	}
+}
